@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Scheme Generator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Carter+One&family=Courgette&family=Geostar&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@400;600;700&family=Kalam:wght@300;400;700&family=Karla:wght@200;600;800&family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Luckiest+Guy&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Mogra&family=Noto+Sans:wght@100;200;300;400;500;600;700;900&family=Orbitron:wght@400;600;900&family=Pacifico&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100;0,400;0,600;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Titan+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Color Scheme Generator</h1>
+        <form id="form-color">
+          <input name="color-selector" type="color" id="color-input" />
+          <select name="scheme" id="scheme-selector">
+            <option value="monochrome">monochrome</option>
+            <option value="monochrome-dark">monochrome-dark</option>
+            <option value="monochrome-light">monochrome-light</option>
+            <option value="analogic">analogic</option>
+            <option value="complement">complement</option>
+            <option value="analogic-complement">analogic-complement</option>
+            <option value="triad">triad</option>
+            <option value="quad">quad</option>
+          </select>
+          <button id="submit-button">Get Color Scheme</button>
+        </form>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="color-container">
+
+            </div>
+        </div>
+    </main>
     <script src="index.js" type="module"></script>
-</body>
+  </body>
 </html>
